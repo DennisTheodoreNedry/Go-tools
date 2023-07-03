@@ -1,2 +1,2 @@
 # Go-tools
-Random set of tools which are neat to have
+Random set of functions which are neat to have
