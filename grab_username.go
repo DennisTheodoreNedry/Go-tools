@@ -4,7 +4,7 @@ import (
 	"os/user"
 	"strings"
 
-	"github.com/s9rA16Bf4/notify_handler/go/notify"
+	notify "github.com/s9rA16Bf4/notify_handler"
 )
 
 // Returns the username of the current user
@@ -12,7 +12,7 @@ func GrabUsername() string {
 	user, err := user.Current()
 
 	if err != nil {
-		notify.Error(err.Error(), "GrabUsername()")
+		notify.Error(err.Error(), "gotools.GrabUsername()", 1)
 	}
 
 	to_return := user.Username

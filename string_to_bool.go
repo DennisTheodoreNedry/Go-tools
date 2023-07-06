@@ -3,7 +3,7 @@ package gotools
 import (
 	"fmt"
 
-	"github.com/s9rA16Bf4/notify_handler/go/notify"
+	notify "github.com/s9rA16Bf4/notify_handler"
 )
 
 // Converts the provided string to into a boolean
@@ -11,7 +11,7 @@ func StringToBoolean(value string) bool {
 	to_return := false
 
 	if value != "true" && value != "false" {
-		notify.Error(fmt.Sprintf("Needed true/false, recieved %s", value), "StringToBoolean()")
+		notify.Error(fmt.Sprintf("Needed true/false, recieved %s", value), "gotools.StringToBoolean()", 1)
 	}
 
 	if value == "true" {

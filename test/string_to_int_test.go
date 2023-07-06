@@ -1,9 +1,9 @@
 package test
 
 import (
-	"testing"
-
+	gotools "github.com/s9rA16Bf4/Go-tools"
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 func TestStringToInt(t *testing.T) {

@@ -1,10 +1,10 @@
 package test
 
 import (
+	gotools "github.com/s9rA16Bf4/Go-tools"
+	"github.com/stretchr/testify/assert"
 	"os/user"
 	"testing"
-
-	"github.com/stretchr/testify/assert"
 )
 
 func TestGrabUsername(t *testing.T) {

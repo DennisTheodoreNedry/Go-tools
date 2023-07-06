@@ -1,11 +1,11 @@
 package test
 
 import (
+	gotools "github.com/s9rA16Bf4/Go-tools"
+	"github.com/stretchr/testify/assert"
 	"os"
 	"path/filepath"
 	"testing"
-
-	"github.com/stretchr/testify/assert"
 )
 
 func TestGrabExecutableName(t *testing.T) {
