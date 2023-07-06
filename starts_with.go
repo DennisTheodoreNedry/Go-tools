@@ -1,10 +1,10 @@
-package tools
+package gotools
 
 import "strings"
 
 // Wrapper for the strings.HasPrefix function, but takes in a array contaning strings to look for
 // and returns a map in the format of { "<key>":"<true/false>" }
-func Starts_with(target string, selection []string) map[string]bool {
+func StartsWith(target string, selection []string) map[string]bool {
 	to_return := make(map[string]bool)
 
 	for _, value := range selection {

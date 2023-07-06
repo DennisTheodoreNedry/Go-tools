@@ -1,4 +1,4 @@
-package tools
+package gotools
 
 import (
 	"math/rand"
@@ -22,7 +22,7 @@ func Generate_random_n_string(size int) string {
 
 // Generates a random string between the lengthes of 1 and 128
 func Generate_random_string() string {
-	rand.Seed(time.Now().UnixNano())
+	rand.New(rand.NewSource(time.Now().UnixNano()))
 	max := 128
 	min := 1
 	return Generate_random_n_string(rand.Intn(max-min) + min)

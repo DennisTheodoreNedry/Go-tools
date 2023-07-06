@@ -1,8 +1,8 @@
-package tools
+package gotools
 
 import "fmt"
 
 // Converts the provided int to a string
-func Int_to_string(value int) string {
+func IntToString(value int) string {
 	return fmt.Sprint(value)
 }

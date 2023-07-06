@@ -1,10 +1,10 @@
-package tools
+package gotools
 
 import "path/filepath"
 
 // Returns the executable name
-func Grab_executable_name() string {
-	path := Grab_executable_path()
+func GrabExecutableName() string {
+	path := GrabExecutablePath()
 	exe_name := filepath.Base(path)
 
 	return exe_name

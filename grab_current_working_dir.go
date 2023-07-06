@@ -1,4 +1,4 @@
-package tools
+package gotools
 
 import (
 	"os"
@@ -7,10 +7,10 @@ import (
 )
 
 // Grabs the current working path
-func Grab_CWD() string {
+func GrabCWD() string {
 	path, err := os.Getwd()
 	if err != nil {
-		notify.Error(err.Error(), "tools.Grab_CWD()")
+		notify.Error(err.Error(), "GrabCWD()")
 	}
 	return path
 }

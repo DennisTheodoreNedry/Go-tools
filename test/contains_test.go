@@ -3,12 +3,12 @@ package test
 import (
 	"testing"
 
-	"github.com/s9rA16Bf4/go-evil/utility/tools"
+	"github.com/s9rA16Bf4/Go-tools"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestContains(t *testing.T) {
-	result := tools.Contains("Hello, world!", []string{","})
+	result := gotools.Contains("Hello, world!", []string{","})
 
 	ok := result[","]
 
@@ -16,7 +16,7 @@ func TestContains(t *testing.T) {
 }
 
 func TestDoestNotContainValue(t *testing.T) {
-	result := tools.Contains("Hello, world!", []string{"."})
+	result := gotools.Contains("Hello, world!", []string{"."})
 
 	ok := result[","]
 

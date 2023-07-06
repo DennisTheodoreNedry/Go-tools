@@ -1,4 +1,4 @@
-package tools
+package gotools
 
 import (
 	"os/user"
@@ -7,11 +7,11 @@ import (
 )
 
 // Grabs the current users home directory
-func Grab_home_dir() string {
+func GrabHomeDir() string {
 	path, err := user.Current()
 
 	if err != nil {
-		notify.Error(err.Error(), "tools.Grab_home_dir()")
+		notify.Error(err.Error(), "GrabHomeDir()")
 	}
 
 	return path.HomeDir

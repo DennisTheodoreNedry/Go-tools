@@ -3,12 +3,11 @@ package test
 import (
 	"testing"
 
-	"github.com/s9rA16Bf4/go-evil/utility/tools"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestStartsWith(t *testing.T) {
-	result := tools.Starts_with("Hello my name is XXXAAAXXX", []string{"Hello"})
+	result := gotools.StartsWith("Hello my name is XXXAAAXXX", []string{"Hello"})
 
 	ok := result["Hello"]
 
@@ -16,7 +15,7 @@ func TestStartsWith(t *testing.T) {
 }
 
 func TestDoesntStartWith(t *testing.T) {
-	result := tools.Starts_with("Hello, world!", []string{"Peter"})
+	result := gotools.StartsWith("Hello, world!", []string{"Peter"})
 
 	ok := result["Peter"]
 

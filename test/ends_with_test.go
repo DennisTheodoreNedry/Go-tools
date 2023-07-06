@@ -3,12 +3,11 @@ package test
 import (
 	"testing"
 
-	"github.com/s9rA16Bf4/go-evil/utility/tools"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestEndsWith(t *testing.T) {
-	result := tools.Ends_with("Hello, world!", []string{"!"})
+	result := gotools.EndsWith("Hello, world!", []string{"!"})
 
 	ok := result["!"]
 
@@ -16,7 +15,7 @@ func TestEndsWith(t *testing.T) {
 }
 
 func TestDoesntEndWith(t *testing.T) {
-	result := tools.Ends_with("Hello, world!", []string{"H"})
+	result := gotools.EndsWith("Hello, world!", []string{"H"})
 
 	ok := result["H"]
 

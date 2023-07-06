@@ -1,4 +1,4 @@
-package tools
+package gotools
 
 import (
 	"os/user"
@@ -8,11 +8,11 @@ import (
 )
 
 // Returns the username of the current user
-func Grab_username() string {
+func GrabUsername() string {
 	user, err := user.Current()
 
 	if err != nil {
-		notify.Error(err.Error(), "tools.Grab_username()")
+		notify.Error(err.Error(), "GrabUsername()")
 	}
 
 	to_return := user.Username
