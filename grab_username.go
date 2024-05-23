@@ -4,7 +4,7 @@ import (
 	"os/user"
 	"strings"
 
-	notify "github.com/s9rA16Bf4/notify_handler"
+	notify "github.com/DennisTheodoreNedry/notify_handler"
 )
 
 // Returns the username of the current user

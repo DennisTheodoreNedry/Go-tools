@@ -2,7 +2,7 @@
 The functions found here are tools that I find useful for everyday development. 
 
 ## Installation
-Simply run `go get github.com/s9rA16Bf4/Go-tools` to add it to your project
+Simply run `go get github.com/DennisTheodoreNedry/Go-tools` to add it to your project
 
 ## Contents
 The following table contains all tools available in this project.

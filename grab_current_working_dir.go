@@ -3,7 +3,7 @@ package gotools
 import (
 	"os"
 
-	notify "github.com/s9rA16Bf4/notify_handler"
+	notify "github.com/DennisTheodoreNedry/notify_handler"
 )
 
 // Grabs the current working path

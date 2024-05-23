@@ -3,7 +3,7 @@ package gotools
 import (
 	"os/user"
 
-	notify "github.com/s9rA16Bf4/notify_handler"
+	notify "github.com/DennisTheodoreNedry/notify_handler"
 )
 
 // Grabs the current users home directory

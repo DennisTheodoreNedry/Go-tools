@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	gotools "github.com/s9rA16Bf4/Go-tools"
+	gotools "github.com/DennisTheodoreNedry/Go-tools"
 	"github.com/stretchr/testify/assert"
 )
 
